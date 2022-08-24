@@ -1,8 +1,4 @@
 function timer(id, deadline) {
-  //timer
-
-  // let deadline = new Date("June 31 2022");
-
   function getTimeRemaning(endtime) {
     const totalTimeInMs = Date.parse(endtime) - Date.parse(new Date());
 
@@ -22,10 +18,10 @@ function timer(id, deadline) {
 
     return {
       total: totalTimeInMs,
-      days: days,
-      hours: hours,
-      minutes: minutes,
-      seconds: seconds,
+      days,
+      hours,
+      minutes,
+      seconds,
     };
   }
 
