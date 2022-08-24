@@ -227,7 +227,6 @@ function forms(modalTimerId) {
       const formData = new FormData(form);
 
       const json = JSON.stringify(Object.fromEntries(formData.entries()));
-      console.log(Object.fromEntries(formData.entries()));
 
       // const object = {};
       // formData.forEach((item, i) => {
@@ -235,8 +234,7 @@ function forms(modalTimerId) {
       // }); // Изначальный код, сейчас изменим его с учетом новых методов
 
       postData("http://localhost:3000/requests", json)
-        .then((response) => {
-          console.log(response);
+        .then(() => {
           showThanksModal(message.success);
           messageStatus.remove();
         })
