@@ -1,4 +1,5 @@
 "use strict";
+
 require("es6-promise").polyfill();
 import "nodelist-foreach-polyfill";
 
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   tabs(".tabheader__item", ".tabcontent", ".tabheader__items", "tabheader__item_active");
   modal("[data-modal]", ".modal", modalTimerId);
-  timer(".timer", "Jule 31 2022");
+  timer(".timer", "September 30 2022");
   forms(modalTimerId);
   cards();
   slider({
